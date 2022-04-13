@@ -10,7 +10,7 @@ const packages = [
 ]
 
 function getTypeDocCMD(packageName){
-  return `npx typedoc --tsconfig typedoc-tsconfig.json ./packages/${packageName}/src/index.ts --out ./doc/${packageName} `
+  return `npx typedoc ./packages/${packageName}/src/index.ts --out ./doc/${packageName} `
 }
 
 for (const packageName of packages){

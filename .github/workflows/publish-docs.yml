@@ -29,7 +29,7 @@ jobs:
         run: curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh -s -- -f
 
       - name: Install dependencies 
-        run: yarn install --immutable | grep -v 'YN0013'
+        run: yarn install
 
       - name: Build 
         run: yarn build  
