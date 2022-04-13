@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "lib": ["es2017", "dom"],
+        "sourceMap": true,
+        "declaration": true,
+        "experimentalDecorators": true,
+        "downlevelIteration": true,
+        "noImplicitReturns": true,
+        "resolveJsonModule": true,
+        "preserveSymlinks": true,
+        "pretty": true,
+        "skipLibCheck": true,
+        "strict": true
+    },
+    "exclude": [
+        "**/node_modules",
+        "**/*.spec.ts",
+        "**/*.__test__.ts"
+    ]
+}
