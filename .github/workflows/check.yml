@@ -1,4 +1,4 @@
-name: publish
+name: check
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   check:
-    name: check for .only
+    name: for .only
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
@@ -16,6 +16,7 @@ jobs:
         with:
           node-version: 16.x
       - name: install dependencies
-        run: npm install --save-dev stop-only
-      - name: run stop-only 
-        run: stop-only --folder tests --folder bin
+        run: yarn install
+      - name: Run stop-only check cmd
+        run: |
+          stop-only --folder tests --skip node_modules
