@@ -38,7 +38,8 @@
     "example:mixer": "NODE_OPTIONS=\"--loader ./loader.js\" node ./examples/node/substrate/mixer.ts",
     "script": "NODE_OPTIONS=\"--loader ./loader.js\" node",
     "format": "prettier --write \"{packages,examples,tests}/**/*.{ts,js,jsx,tsx}\" && cargo fmt --manifest-path packages/wasm-utils/Cargo.toml",
-    "doc": "npx typedoc --name \"Webb Tools API\" --includeVersion --options ./typedoc.json"
+    "doc": "npx typedoc --name \"Webb Tools API\" --includeVersion --options ./typedoc.json",
+    "stop-only": "stop-only --folder tests --skip node_modules"
   },
   "devDependencies": {
     "@babel/cli": "7.18.9",
@@ -79,6 +80,7 @@
     "prettier": "^2.2.1",
     "snarkjs": "0.4.22",
     "source-map-support": "^0.5.19",
+    "stop-only": "^3.1.2",
     "ts-jest": "^26.5.2",
     "ts-node": "10.8.0",
     "tsconfig-paths": "^3.14.1",
